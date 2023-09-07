@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Position - Static, Relative, Absolute e Fixed</title>
+        <style> 
+            .container{
+                background: blueviolet;
+                color: white;
+                margin: 40px 0;
+                height: 150px;
+                /*Static: posição pre definida, padrão*/
+                /*position: static;*/
+                position: relative;
+            }
+            .filho-relative{
+                /*Relactive: relativa ao elemento pai*/
+                background: red;
+                position: relative;
+                top: 10px;
+                left: 20px;
+                bottom: 20px;
+                right: 50px;
+                width: 120px;
+            }
+            .filho-absolute{
+                /*Absolute: herarquia com base no html*/
+                position: absolute;
+                background: red;
+                top: 100px;
+                right: 0px;
+            }
+            .Fixed{
+                /*Fixed: segue a pagina duranate o scroll*/
+                position: fixed;
+                color: #fff;
+                font-size: 50px;
+                background: red;
+                bottom: 20px;
+                right: 30px;
+                z-index: 999;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="Fixed">
+            Texto Fixed
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">texto 2</div>
+            Texto 3
+        </div>
+        <div>
+            <div class="container">
+                Texto 1
+                <div class="filho-absolute">texto 2</div>
+                Texto 3
+            </div>
+        </div>
+        <div class="container">
+            Texto 1
+            <div class="filho-relative">texto 2</div>
+            Texto 3
+        </div>
+        <div>
+            <div class="container">
+                Texto 1
+                <div class="filho-absolute">texto 2</div>
+                Texto 3
+            </div>
+        </div>
+    </body>
+</html>

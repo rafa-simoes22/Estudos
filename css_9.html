@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Display e Visibilidade</title>
+        <style>
+            span{
+                display: block;
+            }
+            p{
+                color:red ;
+            }
+            p.exemplo-1{
+                display: block;/*apresentar no html de uma determinada forma */
+            }
+            p.exemplo-2{
+                display: inline;
+            }
+            p.exemplo-3{
+                display: inline-block;
+            }
+            p.exemplo-4{
+                display: none;
+            }
+            .aparecer:hover p.exemplo-4{
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <span>
+            abc
+        </span>
+        <p class="exemplo-1">
+            Texto1
+        </p>
+        <div>
+            Texto 1 abc
+            <p class="exemplo-2">
+                Texto2
+            </p>
+            Texto 2 abc
+        </div>      
+        <div>
+            Texto 3 abc
+            <p class="exemplo-3">
+                Texto3
+            </p>
+            Texto 4 abc
+        </div>
+        <div class="aparecer">
+            Aparecer
+            <p class="exemplo-4">
+                Texto4
+            </p>
+        </div>
+    </body>
+</html>
