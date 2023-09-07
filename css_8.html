@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Margem, Padding e Border</title>
+        <style>
+            /*0.0.0.0(topo, lado, baixo, esquerda)*/
+            div{
+                margin: 150px 10px 30px 50px;/*tudo que esta fora da divi o margin vai empurrar*/
+                background: hotpink;
+                color: #FFF;
+                padding: 30px 50px 45px 150px;/*tudo que esta dentro da divi o padding vai empurrar*/
+                border: 10px solid indigo; /*tamanho unico, um para cada lado caso precise alterar as medidas laterais*/
+                /*border: 10px dashed indigo;*/
+            }
+
+        </style>
+    </head>
+    <body>
+        <div>
+            texto
+        </div>
+        <hr/>
+        <div>
+            texto
+        </div>
+    </body>
+</html>
