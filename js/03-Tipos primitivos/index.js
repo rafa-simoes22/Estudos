@@ -1,0 +1,10 @@
+let nome = "Rafaela";
+let idade = 22;
+let bollean = true;
+let nullo = null;
+let undefined;
+console.log( typeof nome, nome);
+console.log( typeof idade, idade);
+console.log( typeof bollean, bollean);
+console.log( typeof nullo, nullo);
+console.log( typeof undefined, undefined);
